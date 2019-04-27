@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/*  <!-- Start of Menu Section --> */
+.menu-container {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 5px
+}
+
+.menu-container ul li {
+	display: inline-block;
+	border: 1px solid lightgray;
+	border-radius: 20px;
+	padding: 20px;
+	background: #06c2ff;
+	color: white;
+	text-decoration: none;
+	margin: 30px;
+}
+
+.menu-container ul li a:hover {
+	/* Stretch Goal 2 */
+	font-family: Anton;
+	animation: a 1s ease;
+	animation-iteration-count: 1;
+	/* text-decoration: none; */
+	background: white;
+	color: black;
+}
+
+@keyframes a {
+	20% {transform: translateX(10px);}
+	40% {transform: translateX(-10px);}
+	60% {transform: translateX(2px);}
+	80% {transform: translateX(-1px);}
+	100% {transform: translateX(0px);}
+}
+
+.menu-container header nav ul .img {
+	background-image: url(/User-Interface/great-idea-website/img/logo.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding: 16px 100px;	
+	margin-left: 50px;
+}
+/*<!-- End of Menu Section--> */
+
+
+/* <!-- Start of  Jumbotron--> */
+.jumbotron-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.jumbotron-container h1 {
+	display: inline-block;
+	position: relative;
+	left: 175px;
+	bottom: 50px;
+	font-size: 80px;
+	padding: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.jumbotron-container button {
+	width: 125px;
+	height: 50px;
+	position: relative;
+	right: 80px;
+	top: 2px;
+}
+
+.jumbotron-container .img1 {
+ background-image:  url(/User-Interface/great-idea-website/img/header-img.png);
+ background-repeat: no-repeat;
+ display: inline-block;
+ position: relative;
+ padding: 200px  200px;
+ top: 75px;
+ left: 150px; 
+}
+
+/* .jumbotron-container .logo1 {
+	display: inline-block;
+	position: relative;
+	left: 200px;
+	top: 50px;
+} */
+/*  End of  Jumbotron Section */
+
+/* Start of Main Section*/
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main-container .top-main {
+	display: inline-block;
+	width: 570px;
+	margin: 5px;
+}
+
+.main-container figure .img2 {
+background-image: url(/User-Interface/great-idea-website/img/mid-page-accent.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-position: border-box; */
+/* background-size: auto auto; */
+margin-left: 150px;
+margin-top: 50px; 
+display: inline-block;
+position: relative;
+width: 876px;
+height: 256px;
+
+/* padding: 250px 1200px; */
+}
+
+.main-container figure .middle-img {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main-container .bottom-main {
+	display: inline-block;
+	width: 365px;
+	margin: 5px;
+	margin-bottom: 20px;
+}
+
+/* End of Main Section */
+
+/* Start of Contact Section  */
+.contact-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.contact-container h2 {
+	margin-top: 15px;
+}
+
+.contact-container address {
+	line-height: 2;
+}
+
+/*  End of Contact Section  */
+
+/*  Start of Footer Section  */
+footer h5 {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*  End of Footer Section  */
+
+hr {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
